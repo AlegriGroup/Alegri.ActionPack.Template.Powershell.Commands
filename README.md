@@ -1,4 +1,4 @@
- # Alegri.ActionPack.Template.Powershell.Commands
+# Alegri.ActionPack.Template.Powershell.Commands
 
 ##Kurz Beschreibung
 Das Aktionspaket Template ist ein Beispiel Powershell Modul um ein Aktionspaket für den Aktion Flow Tool zu erstellen.
