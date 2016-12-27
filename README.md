@@ -1,4 +1,5 @@
 
+
 # Alegri.ActionPack.Template.Powershell.Commands
 
 ##Kurz Beschreibung
@@ -25,6 +26,9 @@ Ebenfalls im Beispiel enthalten, ist das einbauen einer manuellen Interaktion in
   3. Erstellen Sie eine Funktion mit dem Namen Find-ActionInActionPackage[Paket]
   4. Erstellen Sie eine Funktion mit dem Namen Start-ActionFromActionPackage[Paket]
 * Einbau Ihrer Aktion in der Find-ActionInActionPackage[Paket]
+![image](https://cloud.githubusercontent.com/assets/6292190/21508762/e8cde71a-cc83-11e6-96aa-a727c8505f7d.png)
+  1. Deklarieren Sie für jede Aktion eine Switch Case Anweisung und setzen den Return Wert auf True
+  2. Sie müssen einen Boolean Wert zurückgeben. Damit prüft das AktionFlow Tool ob die Funktion in dem Paket vorhanden ist.
 * Einbau Ihrer Aktion in der Start-ActionFromActionPackage[Paket]
 
 ---
@@ -54,4 +58,7 @@ Also included in the example is the incorporation of a manual interaction within
   3. Create a function called Find-ActionInActionPackage [package]
   4. Create a function called Start-ActionFromActionPackage [package]
 * Include your action in the Find-ActionInActionPackage [Template]
+![image](https://cloud.githubusercontent.com/assets/6292190/21508762/e8cde71a-cc83-11e6-96aa-a727c8505f7d.png)
+  1. Declare a switchcase statement for each action and set the return value to true
+  2. You must return a Boolean value. The ActionFlow tool checks whether the function exists in the package.
 * Include your action in the Startup ActionFromActionPackage [Template]
