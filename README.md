@@ -31,6 +31,10 @@ Ebenfalls im Beispiel enthalten, ist das einbauen einer manuellen Interaktion in
 ![image](https://cloud.githubusercontent.com/assets/6292190/21509057/e3b9b946-cc85-11e6-9ddf-c09c06fdc4a5.png)
   1. Holen Sie den Aktionsnamen aus dem XML Object
   2. Deklarieren Sie für jede Aktion eine Switch Case Anweisung und reichen das ActionObject einfach in ihre Implementierung durch
+* Einbau der ActionPackage[Paket] Datei in der Module Start Datei
+![image](https://cloud.githubusercontent.com/assets/6292190/21509530/2b4aede4-cc8a-11e6-890f-2bb4b84d8b57.png)
+  1. Binden Sie hier die ActionPackage[Paket] Datei ein
+  2. Sie können wie in diesem Beispiel einen Erfolgmeldung auf der Konsole ausgeben, damit Sie wissen dass das Modul eingebunden ist.
 
 ## Beispiel einer Aktion XML für das Action Flow Tool
 ![image](https://cloud.githubusercontent.com/assets/6292190/21509295/dc3e2330-cc87-11e6-8de2-dc5ffe5d596f.png)
@@ -74,6 +78,10 @@ Also included in the example is the incorporation of a manual interaction within
 ![image](https://cloud.githubusercontent.com/assets/6292190/21509057/e3b9b946-cc85-11e6-9ddf-c09c06fdc4a5.png)
   1. Get the action name from the XML Object
   2. Declare a switchcase statement for each action and simply pass the ActionObject into its implementation
+* Install the ActionPackage [package] file in the Startup file
+![image](https://cloud.githubusercontent.com/assets/6292190/21509530/2b4aede4-cc8a-11e6-890f-2bb4b84d8b57.png)
+  1. Insert the ActionPackage [package] file
+  2. As in this example, you can issue a success message on the console to let you know that the module is embedded.
 
 ## Example of an Action Flow Tool XML
 ![image](https://cloud.githubusercontent.com/assets/6292190/21509295/dc3e2330-cc87-11e6-8de2-dc5ffe5d596f.png)
