@@ -19,6 +19,7 @@
 
 <dl>
 <dt>Short Description</dt>
+<dd>The Template action pack is a sample Powershell module to create an action package for the Action Flow tool.</dd>
 
 <dd>The expansion is in two areas. On the one hand the action extension in the XML schema to create a valid XML. The other extension takes place in the connection of its action to the function which carries out the actual action.</dd>
 
