@@ -32,6 +32,14 @@ Ebenfalls im Beispiel enthalten, ist das einbauen einer manuellen Interaktion in
   1. Holen Sie den Aktionsnamen aus dem XML Object
   2. Deklarieren Sie für jede Aktion eine Switch Case Anweisung und reichen das ActionObject einfach in ihre Implementierung durch
 
+## Beispiel einer Aktion XML für das Action Flow Tool
+![image](https://cloud.githubusercontent.com/assets/6292190/21509295/dc3e2330-cc87-11e6-8de2-dc5ffe5d596f.png)
+  1. Innerhalb des ActionConfigure Element können Sie ihre Aktionsblöcke hinterlegen. 
+  2. Innerhalb eines Aktionsblock definieren Sie die einzelnen Aktionen. Ein Block kann durch Ignore = true deaktiviert werden. 
+  3. Innerhalb einer Aktion können Sie zwei Arten von Aktionen hinterlegen. Ein Manuelle oder Automatische Aktion. Sie können ihre Aktion eine Beschreibung sowie einer ID vergeben um beim Logging besser unterscheiden zu können.
+  4. In einem Manuellen Task ist nur die Eingabe des Aktionstext notwendig. Sie geben dem User hiermit eine Anweisung was dieser machen soll bevor das Skript weiterläuft. Der User hat auch die Möglichkeit die weiteren Aktionen abzubrechen.
+  5. Eine Automatische Aktion stellt eine Aktion aus einem Aktion Paket dar. Die notwendigen Eingabe hängt von der jeweiligen Aktion ab. Es können auch weitere Elemente innerhalb der Aktion notwendig sein. 
+  
 ---
 
 ##Short Description
@@ -67,3 +75,10 @@ Also included in the example is the incorporation of a manual interaction within
   1. Get the action name from the XML Object
   2. Declare a switchcase statement for each action and simply pass the ActionObject into its implementation
 
+## Example of an Action Flow Tool XML
+![image](https://cloud.githubusercontent.com/assets/6292190/21509295/dc3e2330-cc87-11e6-8de2-dc5ffe5d596f.png)
+  1. Within the ActionConfigure element, you can save your action blocks.
+  2. Within an action block, you define the individual actions. A block can be disabled by Ignore = true.
+  3. You can define two types of actions within an action. A manual or automatic action. You can give your action a description as well as an ID in order to be able to distinguish between logging.
+  4. In a manual task, only the action text is required. They give the user herewith a statement what this should do before the script continues. The user also has the possibility to cancel further actions.
+  5. An automatic action is an action from an action package. The necessary input depends on the action. Further elements within the action may also be necessary.
