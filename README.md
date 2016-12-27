@@ -1,3 +1,4 @@
+
 # Alegri.ActionPack.Template.Powershell.Commands
 
 ##Kurz Beschreibung
@@ -18,8 +19,13 @@ Ebenfalls im Beispiel enthalten, ist das einbauen einer manuellen Interaktion in
 ![image](https://cloud.githubusercontent.com/assets/6292190/21508476/a28aef70-cc81-11e6-92ba-490330e155d7.png)
   1. Hiermit binden Sie ihre eigene Aktionen Schema ein.
 * Erstellen einer AktionPackage[Paket] Datei mit den Referenzen zu den Scripten mit den Aktionsimplementierungen
-* Einbau Ihrer Aktion in der Find-ActionInActionPackage[Template]
-* Einbau Ihrer Aktion in der Start-ActionFromActionPackage[Template]
+![image](https://cloud.githubusercontent.com/assets/6292190/21508600/97a86f32-cc82-11e6-803e-f0dcc4c68c5e.png)
+  1. Bitte halten Sie sich an die Namenskonvention ActionPackage[Paket].ps1
+  2. Bitte lagern Sie Ihre eigene Aktionen in eigene Skripte aus und binden Sie ihre Skripte hier ein.
+  3. Erstellen Sie eine Funktion mit dem Namen Find-ActionInActionPackage[Paket]
+  4. Erstellen Sie eine Funktion mit dem Namen Start-ActionFromActionPackage[Paket]
+* Einbau Ihrer Aktion in der Find-ActionInActionPackage[Paket]
+* Einbau Ihrer Aktion in der Start-ActionFromActionPackage[Paket]
 
 ---
 
@@ -42,5 +48,10 @@ Also included in the example is the incorporation of a manual interaction within
 ![image](https://cloud.githubusercontent.com/assets/6292190/21508476/a28aef70-cc81-11e6-92ba-490330e155d7.png)
   1. Use this to bind your own schema actions.
 * Create an ActionPackage [package] file containing the references to the scripts with the action implementations
+![image](https://cloud.githubusercontent.com/assets/6292190/21508600/97a86f32-cc82-11e6-803e-f0dcc4c68c5e.png)
+  1. Please refer to the name convention ActionPackage [package] .ps1
+  2. Please add your own actions to your own scripts and include your scripts here.
+  3. Create a function called Find-ActionInActionPackage [package]
+  4. Create a function called Start-ActionFromActionPackage [package]
 * Include your action in the Find-ActionInActionPackage [Template]
 * Include your action in the Startup ActionFromActionPackage [Template]
