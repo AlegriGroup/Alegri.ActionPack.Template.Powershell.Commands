@@ -6,10 +6,18 @@ Das Aktionspaket Template ist ein Beispiel Powershell Modul um ein Aktionspaket 
 Die Erweiterung erfolgt in zwei Bereiche. Zum einen die Aktionserweiterung in der XML Schema um ein gültige XML erstellen zu können. Die andere Erweiterung erfolgt in der Anbindung ihrer Aktion zu der Funktion die die eigentliche Aktion ausführt.
 
 Ebenfalls im Beispiel enthalten, ist das einbauen einer manuellen Interaktion innerhalb einer Aktion.
+![image](https://cloud.githubusercontent.com/assets/6292190/21508246/d2f36ee6-cc7f-11e6-9d6e-4155b2453a7a.png)
 
 ## Übersicht der Anpassungen für Ihr eigenes Aktionspaket
 * Erstellung einer eigenen Schema Datei mit Ihren Action Objecten
+![image](https://cloud.githubusercontent.com/assets/6292190/21508101/43014124-cc7e-11e6-9d0d-f36c77fbe1aa.png)
+  1. Verwenden Sie die Gleiche Schemabezeichnung, damit Sie in dem Schema des ActionFlow die Include Funktion nützen können.
+  2. Das oberste Element muss den Namen ActionObject haben
+  3. Hier definieren Sie ihre Aktionen. Um keine Konflikte mit anderen Paketen zu bekommen, halten Sie sich an die Namenskonvention AP_[Paket]_[Aktion]
 * Einbinden der eigenen Schema in das Schema des ActionFlowTool
+![image](https://cloud.githubusercontent.com/assets/6292190/21508476/a28aef70-cc81-11e6-92ba-490330e155d7.png)
+  1. Hiermit binden Sie ihre eigene Aktionen Schema ein.
+* Erstellen einer AktionPackage[Paket] Datei mit den Referenzen zu den Scripten mit den Aktionsimplementierungen
 * Einbau Ihrer Aktion in der Find-ActionInActionPackage[Template]
 * Einbau Ihrer Aktion in der Start-ActionFromActionPackage[Template]
 
@@ -22,9 +30,17 @@ The action pack template is a sample Powershell module to create an action packa
 The expansion is in two areas. On the one hand the action extension in the XML schema to create a valid XML. The other extension takes place in the connection of its action to the function which carries out the actual action.
 
 Also included in the example is the incorporation of a manual interaction within an action.
+![image](https://cloud.githubusercontent.com/assets/6292190/21508246/d2f36ee6-cc7f-11e6-9d6e-4155b2453a7a.png)
 
 ## Overview of customizations for your own action pack
 * Create your own schema file with your action objects
+![image](https://cloud.githubusercontent.com/assets/6292190/21508101/43014124-cc7e-11e6-9d0d-f36c77fbe1aa.png)
+  1. Use the same schema drawing so that you can use the include function in the ActionFlow schema.
+  2. The top element must have the name ActionObject
+  3. Here you define your actions. To avoid conflicts with other packages, follow the naming convention AP_ [package] _ [action]
 * Include your own schema in the schema of the ActionFlowTool
+![image](https://cloud.githubusercontent.com/assets/6292190/21508476/a28aef70-cc81-11e6-92ba-490330e155d7.png)
+  1. Use this to bind your own schema actions.
+* Create an ActionPackage [package] file containing the references to the scripts with the action implementations
 * Include your action in the Find-ActionInActionPackage [Template]
 * Include your action in the Startup ActionFromActionPackage [Template]
