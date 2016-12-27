@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:alg="http://schemas.powershell.ActionFlow.alegri.eu" 
+           attributeFormDefault="unqualified"
+           elementFormDefault="qualified" 
+           targetNamespace="http://schemas.powershell.ActionFlow.alegri.eu"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="ActionObject">
+    <xs:annotation>
+      <xs:documentation>
+        This describes an ActionObject
+        
+        Hiermit wird ein Action Object beschrieben
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <!--From here you can define your action elements -->
+        <!--Ab hier können Sie ihre Aktionselemente hinterlegen-->
+        <xs:element name="AP_Example_FirstAction" type="alg:FirstAction" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="AP_Example_SecondAction" type="alg:SecondAction" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:complexType name="FirstAction">
+    <xs:annotation>
+      <xs:documentation>
+       That´s only demo actions
+      </xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="Description" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation>
+          That´s only demo description
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="SecondAction">
+    <xs:annotation>
+      <xs:documentation>
+        That´s only demo actions
+      </xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="Description" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation>
+          That´s only demo description
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  
+</xs:schema>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<alg:Actionflow xmlns:alg="http://schemas.powershell.ActionFlow.alegri.eu">
+  <alg:ActionConfigure>
+    
+    <alg:Actions Ignore="false">
+      <alg:Action ActionDescription="Test Manuell Aktion" Ignore="false" ActionID="1000">
+        <alg:ManuellAction>
+          <alg:ManuellTask Aktion="Bitte lächeln ;-)"/>
+        </alg:ManuellAction>
+      </alg:Action>
+      <alg:Action ActionDescription="Test Automatic Aktion 1" Ignore="false" ActionID="1010">
+        <alg:AutomationAction>
+          <alg:ActionObject>
+            <alg:AP_Example_FirstAction Description="Nur Beschreibung der ersten Aktion"/>
+          </alg:ActionObject>
+        </alg:AutomationAction>
+      </alg:Action>
+    </alg:Actions>
+
+    <alg:Actions Ignore="false">
+      <alg:Action ActionDescription="Test Manuell Aktion" Ignore="false" ActionID="2000">
+        <alg:ManuellAction>
+          <alg:ManuellTask Aktion="Bitte nochmals lächeln ;-)"/>
+        </alg:ManuellAction>
+      </alg:Action>
+      <alg:Action ActionDescription="Test Automatic Aktion 2" Ignore="false" ActionID="2010">
+        <alg:AutomationAction>
+          <alg:ActionObject>
+            <alg:AP_Example_SecondAction Description="Bin zweite Automatic Actions"/>
+          </alg:ActionObject>
+        </alg:AutomationAction>
+      </alg:Action>
+    </alg:Actions>
+    
+  </alg:ActionConfigure>
+</alg:Actionflow>
