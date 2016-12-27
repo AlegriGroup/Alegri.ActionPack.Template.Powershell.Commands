@@ -1,5 +1,3 @@
-
-
 # Alegri.ActionPack.Template.Powershell.Commands
 
 ##Kurz Beschreibung
@@ -30,6 +28,9 @@ Ebenfalls im Beispiel enthalten, ist das einbauen einer manuellen Interaktion in
   1. Deklarieren Sie für jede Aktion eine Switch Case Anweisung und setzen den Return Wert auf True
   2. Sie müssen einen Boolean Wert zurückgeben. Damit prüft das AktionFlow Tool ob die Funktion in dem Paket vorhanden ist.
 * Einbau Ihrer Aktion in der Start-ActionFromActionPackage[Paket]
+![image](https://cloud.githubusercontent.com/assets/6292190/21509057/e3b9b946-cc85-11e6-9ddf-c09c06fdc4a5.png)
+  1. Holen Sie den Aktionsnamen aus dem XML Object
+  2. Deklarieren Sie für jede Aktion eine Switch Case Anweisung und reichen das ActionObject einfach in ihre Implementierung durch
 
 ---
 
@@ -62,3 +63,7 @@ Also included in the example is the incorporation of a manual interaction within
   1. Declare a switchcase statement for each action and set the return value to true
   2. You must return a Boolean value. The ActionFlow tool checks whether the function exists in the package.
 * Include your action in the Startup ActionFromActionPackage [Template]
+![image](https://cloud.githubusercontent.com/assets/6292190/21509057/e3b9b946-cc85-11e6-9ddf-c09c06fdc4a5.png)
+  1. Get the action name from the XML Object
+  2. Declare a switchcase statement for each action and simply pass the ActionObject into its implementation
+
