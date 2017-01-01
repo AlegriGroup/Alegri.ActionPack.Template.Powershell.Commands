@@ -11,7 +11,7 @@
       <alg:Action ActionDescription="Test Automatic Aktion 1" Ignore="false" ActionID="1010">
         <alg:AutomationAction>
           <alg:ActionObject>
-            <alg:AP_Example_FirstAction Description="Nur Beschreibung der ersten Aktion"/>
+            <alg:AP_Template_FirstAction Description="Nur Beschreibung der ersten Aktion"/>
           </alg:ActionObject>
         </alg:AutomationAction>
       </alg:Action>
@@ -26,7 +26,7 @@
       <alg:Action ActionDescription="Test Automatic Aktion 2" Ignore="false" ActionID="2010">
         <alg:AutomationAction>
           <alg:ActionObject>
-            <alg:AP_Example_SecondAction Description="Bin zweite Automatic Actions"/>
+            <alg:AP_Template_SecondAction Description="Bin zweite Automatic Actions"/>
           </alg:ActionObject>
         </alg:AutomationAction>
       </alg:Action>

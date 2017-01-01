@@ -13,7 +13,7 @@ Hier starten Sie Aktion FirstAction und führen alle nötigen Aufgaben durch
 An XML element <alg: ActionObject>
 Ein XML Element <alg:ActionObject>
 #>
-function Start-FirstAction
+function Start-AP_Template_FirstAction
 {
     [CmdletBinding()]
     param
@@ -23,16 +23,16 @@ function Start-FirstAction
 	)
     Begin
     {
-		Write-Host "Start Start-FirstAction"    
+		Write-Host "Start Start-AP_Template_FirstAction"    
     }
     Process
     {
           Write-Host "You have Start the First Action" -ForegroundColor DarkGreen -BackgroundColor White
-		  Create-QuestionTask -statement "Only for Demonstration" #Implement in AlegriActionFlow Tool
+		  Use-AP_Template_ActionFlow_Create-QuestionTask -statement "Only for Demonstration"
 		  Write-Host "The XML $($xmlActionObject)"		 
 	}
     End
     {
-		Write-Host "End Start-FirstAction"
+		Write-Host "End Start-AP_Template_FirstAction"
     }
 }

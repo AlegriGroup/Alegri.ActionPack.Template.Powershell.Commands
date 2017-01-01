@@ -13,7 +13,7 @@ Hier starten Sie Aktion SecondAction und führen alle nötigen Aufgaben durch
 An XML element <alg: ActionObject>
 Ein XML Element <alg:ActionObject>
 #>
-function Start-SecondAction
+function Start-AP_Template_SecondAction
 {
     [CmdletBinding()]
     param
@@ -23,15 +23,17 @@ function Start-SecondAction
 	)
     Begin
     {
-		Write-Host "Start Start-SecondAction"    
+		Write-Host "Start Start-AP_Template_SecondAction"    
     }
     Process
     {
           Write-Host "You have Start the Second Action" -ForegroundColor DarkBlue -BackgroundColor Yellow
+		  $context = Use-AP_Template_PnPFunc_GetSPOContext #DependentFunction.ps1
+		  Write-Host "Example Dependent Function => Context : $($context)"
 		  Write-Host "The XML $($xmlActionObject)"		 
 	}
     End
     {
-		Write-Host "End Start-SecondAction"
+		Write-Host "End Start-AP_Template_SecondAction"
     }
 }

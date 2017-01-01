@@ -9,7 +9,6 @@
     <xs:annotation>
       <xs:documentation>
         This describes an ActionObject
-        
         Hiermit wird ein Action Object beschrieben
       </xs:documentation>
     </xs:annotation>
@@ -17,8 +16,8 @@
       <xs:sequence>
         <!--From here you can define your action elements -->
         <!--Ab hier können Sie ihre Aktionselemente hinterlegen-->
-        <xs:element name="AP_Example_FirstAction" type="alg:FirstAction" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="AP_Example_SecondAction" type="alg:SecondAction" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="AP_Template_FirstAction" type="alg:FirstAction" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="AP_Template_SecondAction" type="alg:SecondAction" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
