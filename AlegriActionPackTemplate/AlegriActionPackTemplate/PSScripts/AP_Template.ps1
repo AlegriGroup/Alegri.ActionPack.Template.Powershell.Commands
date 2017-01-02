@@ -6,6 +6,9 @@
 #Kommentieren Sie den Bereich ein, wenn Sie vor haben für Ihr Aktionspaket Standard Ordner anzulegen 
 #$Global:AP_Template_Folder_ImportantExample = "$env:USERPROFILE\Documents\ActionFlow\AP_Template\ImportantExample"
 
+# All Global Variable where use in this Package and is released from the outside for use
+# $Global:AP_Template_MyGlobalVariable = $null
+
 # Allows you to bind all scripts into one function call of an action
 # Hiermit binden Sie alle Scripte in die jeweils eine Funktionsaufruf einer Aktion enthält
 . "$PSScriptRoot\DependentFunction.ps1"
@@ -82,9 +85,12 @@ function Start-ActionFromAP_Template
 
 		switch($actionName)
 		{
-			"AP_Template_FirstAction" { Start-AP_Template_FirstAction -xmlActionObject $xmlAction }
-			"AP_Template_SecondAction" { Start-AP_Template_SecondAction -xmlActionObject $xmlAction }
+			"AP_Template_FirstAction" { Start-AP_Template_FirstAction -xmlActionObject $xmlAction.ActionObject.AP_Template_FirstAction }
+			"AP_Template_SecondAction" { Start-AP_Template_SecondAction -xmlActionObject $xmlAction.ActionObject.AP_Template_SecondAction }
 		}
+
+		Write-Host "Action : $($actionName) is ready" -ForegroundColor Green
+		Write-Host ""
     }
     End
     {
@@ -114,7 +120,7 @@ function Check-ExistFolderInAP_Template
 
         if (!$checkFolder1)
         {
-            Write-Host "Standard-Folder from Action Pack Template must be created" -ForegroundColor Magenta
+            Write-Host "Standard-Folder from Action Pack $($Global:ActionPackageName) must be created" -ForegroundColor Magenta
 
 			if(!(Test-Path $folder1)) #System
 			{
@@ -124,7 +130,7 @@ function Check-ExistFolderInAP_Template
         }
 		else 
 		{
-			Write-Host "Standard-Folder from Action Pack Template are exist" -ForegroundColor Green
+			Write-Host "Standard-Folder from Action Pack $($Global:ActionPackageName) are exist" -ForegroundColor Green
 		}
     }
     end

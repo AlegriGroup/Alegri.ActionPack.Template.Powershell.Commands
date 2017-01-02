@@ -38,12 +38,15 @@
     <Compile Include="AlegriActionPack.Template.Powershell.Commands.tests.ps1" />
     <Compile Include="Documentation\ActionFlowNamenskonvention.png" />
     <Compile Include="Documentation\Beispiel einer Aktion XML.png" />
+    <Compile Include="Documentation\BeispielAufrufmanuelleAktion.png" />
+    <Compile Include="Documentation\EinbauEigeneAktionInSchema.png" />
     <Compile Include="Documentation\EinbauIhrerAktionInFindActionFunction.png" />
     <Compile Include="Documentation\EinbauIhrerAktioninStartActionFunktion.png" />
     <Compile Include="Documentation\EinbauInModulStartDatei.png" />
     <Compile Include="Documentation\EinbauStandardOrdner.png" />
     <Compile Include="Documentation\EinbindenEigeneSchema.png" />
     <Compile Include="Documentation\ErstellenEinerAP_PaketNameDatei.png" />
+    <Compile Include="Documentation\Ordnerstruktur.png" />
     <Compile Include="PSScripts\AP_Template.ps1" />
     <Compile Include="PSScripts\DependentFunction.ps1" />
     <Compile Include="PSScripts\FirstAction.ps1" />
